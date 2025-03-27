@@ -27,6 +27,7 @@
     --text-5xl: 3rem;
     --text-5xl--line-height: 1;
     --font-weight-light: 300;
+    --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --tracking-wider: 0.05em;
     --default-font-family: var(--font-sans);
@@ -191,41 +192,11 @@
   .top-4 {
     top: calc(var(--spacing) * 4);
   }
-  .right-1 {
-    right: calc(var(--spacing) * 1);
-  }
-  .right-1\/6 {
-    right: calc(1/6 * 100%);
-  }
-  .right-2 {
-    right: calc(var(--spacing) * 2);
-  }
-  .right-2\/6 {
-    right: calc(2/6 * 100%);
-  }
-  .right-2\/12 {
-    right: calc(2/12 * 100%);
-  }
-  .right-3 {
-    right: calc(var(--spacing) * 3);
-  }
-  .right-3\/6 {
-    right: calc(3/6 * 100%);
-  }
   .right-5 {
     right: calc(var(--spacing) * 5);
   }
-  .right-5\/6 {
-    right: calc(5/6 * 100%);
-  }
   .right-5\/12 {
     right: calc(5/12 * 100%);
-  }
-  .right-\[580px\] {
-    right: 580px;
-  }
-  .right-\[600px\] {
-    right: 600px;
   }
   .-bottom-1 {
     bottom: calc(var(--spacing) * -1);
@@ -498,14 +469,26 @@
   .bg-zinc-900 {
     background-color: var(--color-zinc-900);
   }
+  .p-2 {
+    padding: calc(var(--spacing) * 2);
+  }
   .p-6 {
     padding: calc(var(--spacing) * 6);
   }
-  .px-3 {
-    padding-inline: calc(var(--spacing) * 3);
+  .px-4 {
+    padding-inline: calc(var(--spacing) * 4);
+  }
+  .px-5 {
+    padding-inline: calc(var(--spacing) * 5);
+  }
+  .px-8 {
+    padding-inline: calc(var(--spacing) * 8);
   }
   .px-10 {
     padding-inline: calc(var(--spacing) * 10);
+  }
+  .px-12 {
+    padding-inline: calc(var(--spacing) * 12);
   }
   .px-16 {
     padding-inline: calc(var(--spacing) * 16);
@@ -518,6 +501,9 @@
   }
   .px-80 {
     padding-inline: calc(var(--spacing) * 80);
+  }
+  .py-1 {
+    padding-block: calc(var(--spacing) * 1);
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
@@ -619,6 +605,10 @@
   .font-light {
     --tw-font-weight: var(--font-weight-light);
     font-weight: var(--font-weight-light);
+  }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
   }
   .tracking-wider {
     --tw-tracking: var(--tracking-wider);
