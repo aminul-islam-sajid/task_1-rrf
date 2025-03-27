@@ -7,9 +7,32 @@
 
     <link href="output.css" rel="stylesheet">
     <title>RRF </title>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css" />
+
+    <!-- Slick JS -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
 </head>
 
 <body class="max-w-[1440px]">
+
+    <script>
+        $(document).ready(function () {
+            $(".slider").slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true,
+                prevArrow: `<img src="./images/right1.png" class='slick-arrow left-arrow'>`,
+                nextArrow: `<img src="./images/left.png" class='slick-arrow right-arrow'>`,
+            });
+        });
+    </script>
+
     <!-- navbar complete  -->
     <div class="flex justify-center bg-[#FFD4D0] relative ">
         <img class="absolute top-1/4 left-[510px] transform -translate-x-1/2 -translate-y-1/2"
@@ -247,9 +270,54 @@
 
     <!-- testimonial section  -->
 
-    <div class="bg-[#FFD4D0] flex justify-center">
-        <div class="py-20 px-16">
-            <h1 class="text-4xl font-bold">Testimonials</h1>
+    <div class="bg-[#FFD4D0] flex justify-center relative overflow-hidden">
+        <img class="absolute top-4 w-[112px] right-5/12 flex transform -translate-x-1/2 -translate-y-1/2"
+            src="images/Backgroundnav.png" alt="nav sun logo">
+        <div class="py-16 px-16 container">
+            <h1 class="text-4xl font-bold text-center mt-4">Testimonials</h1>
+            <div class="slider relative py-10">
+                <div class="slide">
+                    <p class="text-center py-10 px-40">Sara Jones's designs are both visually captivating and highly
+                        effective. She
+                        transformed our website, enhancing user engagement and conversions. Her attention to detail and
+                        creative approach are top-notch. Highly recommended!</p>
+                    <div class="flex justify-center items-center mt-6 gap-4">
+                        <img class="w-[70px] h-[70px] rounded-full" src="./images/test.png" alt="">
+                        <p> <span class="text-sm font-bold">John Smith</span> / CEO of XYZ Company</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <p class="text-center py-10 px-40">Sara Jones's designs are both visually captivating and highly
+                        effective. She
+                        transformed our website, enhancing user engagement and conversions. Her attention to detail and
+                        creative approach are top-notch. Highly recommended!</p>
+                    <div class="flex justify-center items-center mt-6 gap-4">
+                        <img class="w-[70px] h-[70px] rounded-full" src="./images/test.png" alt="">
+                        <p> <span class="text-sm font-bold">John Smith 2</span> / CEO of XYZ Company</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <p class="text-center py-10 px-40">Sara Jones's designs are both visually captivating and highly
+                        effective. She
+                        transformed our website, enhancing user engagement and conversions. Her attention to detail and
+                        creative approach are top-notch. Highly recommended!</p>
+                    <div class="flex justify-center items-center mt-6 gap-4">
+                        <img class="w-[70px] h-[70px] rounded-full" src="./images/test.png" alt="">
+                        <p> <span class="text-sm font-bold">John Smith 3</span> / CEO of XYZ Company</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <p class="text-center py-10 px-40">Sara Jones's designs are both visually captivating and highly
+                        effective. She
+                        transformed our website, enhancing user engagement and conversions. Her attention to detail and
+                        creative approach are top-notch. Highly recommended!</p>
+                    <div class="flex justify-center items-center mt-6 gap-4">
+                        <img class="w-[70px] h-[70px] rounded-full" src="./images/test.png" alt="">
+                        <p> <span class="text-sm font-bold">John Smith 4</span> / CEO of XYZ Company</p>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
 
@@ -338,8 +406,10 @@
     </div>
     <!-- Get in Touch  section -->
 
-    <div class="flex justify-center bg-[#FFD4D0]">
-        <div class="container my-20">
+    <div class="flex justify-center bg-[#FFD4D0] relative overflow-hidden">
+        <img class="absolute -left-1  transform -translate-x-4/12 translate-y-5/6" src="images/Background3.png"
+            alt="nav sun logo">
+        <div class="container my-20 relative">
             <div class="flex justify-between items-center">
                 <div class="6/12">
                     <h2 class="text-4xl font-bold">Get in Touch</h2>

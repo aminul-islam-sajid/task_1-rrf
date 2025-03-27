@@ -3,3 +3,15 @@
 .container {
     @apply max-w-[1192px];
 }
+
+.slick-arrow {
+    @apply absolute overflow-hidden top-1/2 -translate-y-1/2 w-12 h-12 cursor-pointer;
+}
+
+.slick-arrow.left-arrow {
+    @apply -right-10 ;
+}
+
+.slick-arrow.right-arrow {
+    @apply -left-10;
+}
